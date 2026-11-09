@@ -30,13 +30,13 @@
   "description": "Spin the circle, match colours, pop the balls and keep the combo going. A colourful puzzle for Android phones and Wear OS watches with a rotating bezel.",
   "applicationCategory": "GameApplication",
   "genre": "Puzzle",
-  "operatingSystem": "Android, Wear OS",
+  "operatingSystem": "iOS, Android, Wear OS",
   "inLanguage": ["en", "uk", "ru", "es", "de", "fr", "pt", "it", "pl", "tr"],
-  "installUrl": "https://play.google.com/store/apps/details?id=com.belanvlad.bezel_pop",
+  "installUrl": "https://apps.apple.com/app/id6824632997",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
 }
 </script>
-<link rel="stylesheet" href="style.css?v=20261013">
+<link rel="stylesheet" href="style.css?v=20261109">
 </head>
 <body>
 <div class="bg" aria-hidden="true">
@@ -63,7 +63,7 @@
     <div class="langs" aria-label="Language">
       <button data-lang="en">EN</button><button data-lang="uk">UA</button><button data-lang="ru">RU</button>
     </div>
-    <a class="btn" data-play href="https://play.google.com/store/apps/details?id=com.belanvlad.bezel_pop" data-i18n="getApp">Get the App</a>
+    <a class="btn" data-appstore href="https://apps.apple.com/app/id6824632997" data-i18n="getApp">Get the App</a>
   </div>
 </header>
 
@@ -75,9 +75,13 @@
       <h1 class="headline">SPIN.<span> POP.</span> REPEAT.</h1>
       <p class="lead" data-i18n="lead">Spin the circle, match colours, pop the balls and keep the combo going. Perfectly designed for smartwatches with a rotating bezel.</p>
       <div class="cta">
-        <a class="badge" data-play href="https://play.google.com/store/apps/details?id=com.belanvlad.bezel_pop">
-          <img data-badge width="646" height="250" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
+        <a class="badge apple" data-appstore href="https://apps.apple.com/app/id6824632997">
+          <img data-abadge width="250" height="83" alt="Download on the App Store" src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us">
         </a>
+        <span class="badge soon" aria-disabled="true">
+          <img data-badge width="646" height="250" alt="Google Play — coming soon" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
+          <em data-i18n="soon">Coming soon</em>
+        </span>
       </div>
       <p class="optimized">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 3h6l1 3H8zM9 21h6l1-3H8z" fill="currentColor"/></svg>
@@ -182,15 +186,21 @@
     <details><summary data-i18n="q3">Do I need a rotating bezel?</summary><p data-i18n="a3">No. You can always spin the circle with your finger; the bezel is simply the most satisfying way to play.</p></details>
     <details><summary data-i18n="q4">Does Premium work on both phone and watch?</summary><p data-i18n="a4">Yes. Buy it once with your Google account: no ads on the phone and unlimited games on the watch.</p></details>
     <details><summary data-i18n="q5">Does it work offline?</summary><p data-i18n="a5">Yes, the game itself plays offline. Ads simply don't load without a connection.</p></details>
-    <details><summary data-i18n="q6">Is there an iPhone version?</summary><p data-i18n="a6">Not yet — right now Bezel Pop is available for Android phones and Wear OS watches.</p></details>
+    <details><summary data-i18n="q6">Is there an iPhone version?</summary><p data-i18n="a6">Yes! Bezel Pop is on the App Store for iPhone. The Android and Wear OS version is coming to Google Play very soon.</p></details>
   </section>
 
   <!-- FINAL -->
   <section class="final">
     <h2 data-i18n="finalT">Ready for one more round?</h2>
-    <a class="badge" data-play href="https://play.google.com/store/apps/details?id=com.belanvlad.bezel_pop">
-      <img data-badge width="646" height="250" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
-    </a>
+    <div class="cta">
+        <a class="badge apple" data-appstore href="https://apps.apple.com/app/id6824632997">
+            <img data-abadge width="250" height="83" alt="Download on the App Store" src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us">
+          </a>
+          <span class="badge soon" aria-disabled="true">
+            <img data-badge width="646" height="250" alt="Google Play — coming soon" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
+            <em data-i18n="soon">Coming soon</em>
+          </span>
+    </div>
   </section>
 </main>
 
@@ -198,9 +208,9 @@
   <a href="privacy/" data-i18n="privacy">Privacy policy</a>
   <a data-contact hidden data-i18n="contact">Contact</a>
   <span>© 2026 Bezel Pop</span>
-  <small data-i18n="tm">Google Play and the Google Play logo are trademarks of Google LLC.</small>
+  <small data-i18n="tm">Google Play and the Google Play logo are trademarks of Google LLC. App Store is a service mark of Apple Inc.</small>
 </footer>
 
-<script src="main.js"></script>
+<script src="main.js?v=20261109"></script>
 </body>
 </html>

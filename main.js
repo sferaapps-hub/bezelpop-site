@@ -58,11 +58,12 @@ const I18N = {
     q5: "Чи працює без інтернету?",
     a5: "Так, сама гра працює офлайн. Просто реклама не завантажується без з’єднання.",
     q6: "Чи є версія для iPhone?",
-    a6: "Поки ні — зараз Bezel Pop доступна для Android-телефонів і годинників Wear OS.",
+    a6: "Так! Bezel Pop уже в App Store для iPhone. Версія для Android і Wear OS зовсім скоро з'явиться в Google Play.",
+    soon: "Незабаром",
     finalT: "Ще один раунд?",
     privacy: "Політика конфіденційності",
     contact: "Контакти",
-    tm: "Google Play і логотип Google Play є товарними знаками Google LLC.",
+    tm: "Google Play і логотип Google Play є товарними знаками Google LLC. App Store є знаком обслуговування Apple Inc.",
   },
   ru: {
     navGame: "Игра",
@@ -117,11 +118,12 @@ const I18N = {
     q5: "Работает ли без интернета?",
     a5: "Да, сама игра работает офлайн. Просто реклама не загружается без соединения.",
     q6: "Есть ли версия для iPhone?",
-    a6: "Пока нет — сейчас Bezel Pop доступна для Android-телефонов и часов Wear OS.",
+    a6: "Да! Bezel Pop уже в App Store для iPhone. Версия для Android и Wear OS совсем скоро появится в Google Play.",
+    soon: "Скоро",
     finalT: "Ещё один раунд?",
     privacy: "Политика конфиденциальности",
     contact: "Контакты",
-    tm: "Google Play и логотип Google Play являются товарными знаками Google LLC.",
+    tm: "Google Play и логотип Google Play являются товарными знаками Google LLC. App Store является знаком обслуживания Apple Inc.",
   },
 };
 
@@ -147,6 +149,10 @@ function setLang(lang) {
   for (const img of document.querySelectorAll('[data-badge]')) img.src = BADGE(lang);
   for (const a of document.querySelectorAll('[data-play]')) {
     a.href = `https://play.google.com/store/apps/details?id=com.belanvlad.bezel_pop&hl=${lang}`;
+  }
+  const loc = { en: 'en-us', uk: 'uk-ua', ru: 'ru-ru' }[lang] || 'en-us';
+  for (const img of document.querySelectorAll('[data-abadge]')) {
+    img.src = `https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/${loc}`;
   }
   for (const b of document.querySelectorAll('[data-lang]')) {
     b.setAttribute('aria-pressed', String(b.dataset.lang === lang));

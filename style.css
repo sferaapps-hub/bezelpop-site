@@ -70,6 +70,15 @@ section { max-width: 1180px; margin: 0 auto; }
 .lead { font-size: clamp(16px, 1.7vw, 19px); color: #D5DCEC; max-width: 470px; margin: 18px 0 24px; }
 .cta { display: flex; gap: 12px; flex-wrap: wrap; }
 .badge img { height: 76px; width: auto; margin: -11px; }
+.cta { align-items: center; }
+.badge.apple img { height: 54px; margin: 0; }
+.badge.soon { position: relative; display: inline-block; cursor: default; }
+.badge.soon img { filter: grayscale(1); opacity: .4; }
+.badge.soon em {
+  position: absolute; top: -6px; right: -6px; font-style: normal; font-size: 11px; font-weight: 800;
+  letter-spacing: .06em; text-transform: uppercase; color: #0A0E17; background: #C9D3EA;
+  padding: 3px 8px; border-radius: 999px;
+}
 .optimized { display: flex; align-items: center; gap: 10px; color: #C9D3EA; font-weight: 600; margin: 26px 0 0; }
 .optimized svg { width: 26px; height: 26px; color: #8FA3C8; }
 .hero-art img {
